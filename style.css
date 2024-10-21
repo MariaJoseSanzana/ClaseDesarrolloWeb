@@ -1,0 +1,44 @@
+/* El estilo del body inferior es la priorizada a no ser que se priorice con un (!important) */
+/* El estilo del body superior es la que se aplicará si no hay otro estilo que lo sustituya */
+body {
+    background-color: rgb(255, 255, 255);
+    border: solid 8px pink; 
+    padding: 2px; /* este es el margen interno del body */
+
+
+    
+}
+
+/* El que tiene mayor especificidad según priorización es id -> class y luego etiqueta ya sea h1, h2, h3, etc */
+
+#main-title {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.subtitle {
+    font-size: 20px;
+    color: rgb(110, 77, 77);
+    text-align: center;
+    margin-top: 20px;
+}
+
+a{
+    font-size: 30px;
+    color: green;
+    display: block; 
+    text-decoration: underline; /* esto es para que el enlace tenga un link */
+    transition: color 0.5s;
+}
+
+.main-button{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 10px 20px; /* esto es el tamaño del botón */
+    border-radius: 5px;  /*esto es el tamaño del borde del botón */
+    cursor: pointer; /* se cambia el cursor al pasar el mouse sobre el botón */
+
+}
